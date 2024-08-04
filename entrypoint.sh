@@ -62,8 +62,6 @@ if [ "$1" = 'server' ]; then
         -config="$VAULT_CONFIG_DIR/common.hcl" \
         -config="$VAULT_CONFIG_DIR/node_$NODE_ID.hcl" \
         -config="$VAULT_CONFIG_DIR/$NODE_TYPE.hcl" \
-        -dev-root-token-id="$VAULT_DEV_ROOT_TOKEN_ID" \
-        -dev-listen-address="${VAULT_DEV_LISTEN_ADDRESS:-"0.0.0.0:8200"}" \
         "$@"
 elif [ "$1" = 'version' ]; then
     # This needs a special case because there's no help output.

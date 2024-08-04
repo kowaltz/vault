@@ -12,5 +12,5 @@ seal "transit" {
   tls_client_cert    = "/etc/vault/client_cert.pem"
   tls_client_key     = "/etc/vault/ca_cert.pem"
   tls_server_name    = "vault"
-  tls_skip_verify    = "false"
+  tls_skip_verify    = "true"
 }
